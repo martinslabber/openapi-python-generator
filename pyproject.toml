@@ -18,7 +18,7 @@ Changelog = "https://github.com/MarcoMuellner/openapi-python-generator/releases"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-httpx = {extras = ["all"], version = "^0.23.0"}
+httpx = "^0.23.0"
 pydantic = "^1.9.1"
 orjson = "^3.7.2"
 openapi-schema-pydantic = "^1.2.3"

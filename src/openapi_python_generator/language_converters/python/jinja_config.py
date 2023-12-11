@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from jinja2 import Environment
@@ -9,7 +10,10 @@ MODELS_TEMPLATE = "models.jinja2"
 SERVICE_TEMPLATE = "service.jinja2"
 HTTPX_TEMPLATE = "httpx.jinja2"
 API_CONFIG_TEMPLATE = "apiconfig.jinja2"
-TEMPLATE_PATH = Path(__file__).parent / "templates"
+tpath = os.environ.get("TEMPLATE_PATH", __file__)
+TEMPLATE_PATH = Path(tpath).parent / "templates"
+
+print("TEMPLATE_PATH", TEMPLATE_PATH)
 
 JINJA_ENV = Environment(
     loader=FileSystemLoader(TEMPLATE_PATH), autoescape=True, trim_blocks=True
