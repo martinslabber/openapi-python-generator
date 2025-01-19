@@ -1,6 +1,6 @@
 from typing import Optional
 
-from openapi_pydantic.v3.v3_0 import OpenAPI
+from openapi_pydantic.v3 import OpenAPI
 
 from openapi_python_generator.common import PydanticVersion
 from openapi_python_generator.language_converters.python import common

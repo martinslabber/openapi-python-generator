@@ -7,7 +7,7 @@ from typing import Tuple
 from typing import Union
 
 import click
-from openapi_pydantic.v3.v3_0 import Reference, Schema, Operation, Parameter, RequestBody, Response, MediaType, PathItem
+from openapi_pydantic.v3 import Reference, Schema, Operation, Parameter, RequestBody, Response, MediaType, PathItem
 
 from openapi_python_generator.language_converters.python import common
 from openapi_python_generator.language_converters.python.common import normalize_symbol

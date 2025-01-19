@@ -12,7 +12,7 @@ import yaml
 from black import NothingChanged
 from httpx import ConnectError
 from httpx import ConnectTimeout
-from openapi_pydantic.v3.v3_0 import OpenAPI
+from openapi_pydantic.v3 import OpenAPI
 from pydantic import ValidationError
 
 from .common import FormatOptions, Formatter, HTTPLibrary, PydanticVersion

@@ -4,7 +4,7 @@ from typing import List
 from typing import Optional
 
 import click
-from openapi_pydantic.v3.v3_0 import Schema, Reference, Components
+from openapi_pydantic.v3 import Schema, Reference, Components
 
 from openapi_python_generator.common import PydanticVersion
 from openapi_python_generator.language_converters.python import common
